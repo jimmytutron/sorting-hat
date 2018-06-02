@@ -1,0 +1,13 @@
+{
+  "name": "sorting-hat",
+  "version": "1.0.0",
+  "description": "\"Now slip me snug around your ears, I've never yet been wrong, I'll have alook inside your mind  And tell where you belong!\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
