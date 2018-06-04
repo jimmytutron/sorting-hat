@@ -1,5 +1,5 @@
-const hogwartsHouses = require("../data/houses");
-const hogwartsStudents = require("../data/students");
+const hogwartsHouses = require("../data/houses.js");
+const hogwartsStudents = require("../data/students.js");
 
 module.exports = (app) => {
 	app.get("/api/houses", (req, res) => {
@@ -11,38 +11,37 @@ module.exports = (app) => {
 	app.post("/api/students", (req, res) => {
 
 		let newStudent = req.body;
-		let newStudentSort = newStudent.scores;
+		console.log(newStudent);
 
-		let sortScore = 99;
+		let houseCompatibility = 99;
 		let matchedHouse = {};
-
-		for (let i=0; i < hogwartHouses.length; i++){
-
 		let totalDifference = 0;
-		for (let j=0; j < hogwartHouses[j].score.length; j++){
-		totalDifference += Math.abs(newStudentSort[j] - hogwartHouses.scores[j]);
-		}
-
-		sortingHat(newStudentSort, hogwartHouses.scores)
-
-		if(totalDifference < sortScore){
-			matchedHouse = hogwartHouses[i];
-			sortScore = totalDifference;
-		}
-	}
 
 		hogwartsStudents.push(newStudent);
-		res.json(matchedHouse);
+		res.json(sortingHat(newStudent, hogwartsHouses));
+		// console.log(matchedHouse);
 	});
 }
 
 
-const sortingHat = (userScoreData, serverScoreData) => {
-	
-		for (let i = 0; i < serverData.length; i++){
-			totalDifference += Math.abs(userScoreData[i] - serverScoreData[i]);
+
+
+
+sortingHat = (student, house) => {
+		for (let i=0; i<house.length; i++){
+			totalDifference = 0;
+			for (let j=0; j<house[i].scores.length; j++){
+				totalDifference += Math.abs(student.scores[j] - house[i].scores[j]);
+			}
+			if (i===0){
+				matchedHouse = house[i];
+				houseCompatibility = totalDifference;
+			} else if (totalDifference < houseCompatibility){
+				matchedHouse = house[i];
+				houseCompatibility = totalDifference;
+			}
 		}
-		return totalDifference;
+		return(matchedHouse);
 }
 
 

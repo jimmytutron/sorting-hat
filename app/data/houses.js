@@ -1,4 +1,4 @@
-let houses = [
+var houses = [
 	{
 		name: "Gryffindor",
 		scores: [
@@ -55,6 +55,7 @@ let houses = [
 		1,
 		1,
 		1]
-	}];
+	}
+	];
 
-module.export = houses;
+module.exports = houses;

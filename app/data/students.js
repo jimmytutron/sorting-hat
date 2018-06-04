@@ -1,4 +1,4 @@
-let students = [
+var students = [
 	{
 		name: "Harry Potter",
 		house: "Hogwarts",
@@ -61,4 +61,4 @@ let students = [
 		1]
 	}];
 
-module.export = students;
+module.exports = students;
