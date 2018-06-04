@@ -17,14 +17,19 @@ module.exports = (app) => {
 		let matchedHouse = {};
 		let totalDifference = 0;
 
-		hogwartsStudents.push(newStudent);
 		res.json(sortingHat(newStudent, hogwartsHouses));
-		// console.log(matchedHouse);
 	});
+	app.post("/api/match", (req, res) => {
+
+		let newStudent = req.body;
+
+		let studentCompatibility = 99;
+		let roommate = {};
+		let totalDifference = 0;
+
+		res.json(sortingHat(newStudent, hogwartsStudents));
+	})
 }
-
-
-
 
 
 sortingHat = (student, house) => {
