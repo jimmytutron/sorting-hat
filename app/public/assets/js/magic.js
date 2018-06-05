@@ -2,7 +2,7 @@ $("#resubmit").hide();
 $("#after").hide();
 
 var questions = [
-"1. I see myself as crtical, quarrelsome",
+"1. I see myself as critical, quarrelsome",
 "2. I do only the minimum amount of work needed to get by",
 "3. I have used deceit or lied to get my way",
 "4. When working, I often set ambitious goals for myself",
