@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/magic.css">
 
     <title>The Sorting Hat</title>
@@ -19,34 +20,45 @@
                 <img class="centerimg img-fluid" src="assets/imgs/hogwartscrest.png">
             </div>
         </div>
-        <div class="container py-5">
+        <div class="container pt-1 pb-5">
         <div class="row justify-content-center">
-            <div id="quote" class="col-12 col-md-6 col-lg-4">
-                <p class="text-center">Welcome to Hogwarts School of Witchcraft and Wizardry</p>
-                <p class="text-center">"I've done this job for centuries<br>
-                   On every student's head I've sat<br>
-                   Of thoughts I take inventories<br>
-                   For I'm the famous Sorting Hat.<br>
-                   I've sorted high, I've sorted low,<br>
-                   I've done the job through thick and thin<br>
-                   So put me on and you will know<br>
-                   Which house you should be in..."</p>
-                   <p class="text-center">The Sorting Hat</p>
+            <div id="quote" class="col-12 col-md-6 col-lg-8">
+                <p class="text-center welcome">The Sorting Hat</p>
                 <img class="centerimg sortinghat" src="https://i.imgur.com/GGxfc5q.png">
+                <p class="text-justify quote">
+                    Welcome to Hogwarts School of Witchcraft and Wizardry. I see you are awaiting to be sorted! Don't worry, this simple exam will help determine which of the noble houses you belong to. </p> <p class="text quote">
+                    For each statement use the slider to indicate how much you agree with that statement. The &#x1F624; representing 'strongly disagree' and the &#x1F601; representing 'strongly agree'. Once you've selected a choice for all 10 questions the sorting hat will work his magic. 
+                </p>
             </div>
         </div>
         <div id="questions">
         </div>
+
         <div class="row justify-content-center">
             <div class="col-12 col-md-2 col-lg-2">
-        <button id="submit">Sort Me</button>
-    </div>
-</div>
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-8" id="testbox">
+                <button id="submit" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter"><span id="before">Sort Me</span><span id="after">Show Results</span></button>    
+                <button id="resubmit" class="btn btn-warning">Sort Me Again</button>
+            </div>
         </div>
-    </div>
+
 </div>
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="house-modal" class="modal-body">
+    </div>
+  </div>
+</div>
+</div>
+
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

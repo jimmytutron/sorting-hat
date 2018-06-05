@@ -2,6 +2,7 @@ body {
 	background-color: #a79f8e;
 	color: #fff;
 	overflow-x: hidden;
+	font-family: 'Crimson Text', serif;
 }
 
 #header {
@@ -14,7 +15,7 @@ body {
 	padding-top: 250px;
 }
 
-#submit {
+#submit, #resubmit, #get-name {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -27,6 +28,32 @@ body {
 	background-color: #79746f;
 	border-radius: 5px;
 }
+
+.welcome {
+	font-size: 5em;
+}
+.splash {
+	font-size: 3em;
+}
+
+a {
+	color: #b78b58;
+}
+
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.quote {
+	font-size: 1.5em;
+}
+.hat {
+	font-size: 1.2em;
+}
+.question {
+	font-size: 1.4em;
+}
+
 .slider-selection.tick-slider-selection {
     background-image: -webkit-linear-gradient(top,#a59f8d 0,#c5b397 100%);
     background-image: -o-linear-gradient(top,#a59f8d 0,#c5b397 100%);
@@ -52,4 +79,8 @@ body {
 
 .sortinghat{
 	max-height: 200px;
+}
+
+.txtcolor {
+	color: #000;
 }
