@@ -51,7 +51,5 @@ To end the sever connection simply hold down `ctrl + c` inside of your terminal.
 
 ## Acknowledgments :pray:
 A bigly thank you to our instructor, Jerome, and the TAs, Amber, Ricky, and Sasha!!  :grimacing:
-
 A huuuuge thanks to my classmates, espeically Robert, Eric, and Nick for helping me when I was confused.
-
 and of course to J.K. Rowling for the gift of Harry Potter and the Wizarding World she created.
