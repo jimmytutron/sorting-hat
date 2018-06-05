@@ -11,7 +11,14 @@ body {
 
 #quote {
 	position: relative;
-	padding-top: 290px;
+	padding-top: 250px;
+}
+
+#submit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 }
 
 .container {

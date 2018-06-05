@@ -19,7 +19,7 @@
                 <img class="centerimg img-fluid" src="assets/imgs/hogwartscrest.png">
             </div>
         </div>
-        <div class="container">
+        <div class="container py-5">
         <div class="row justify-content-center">
             <div id="quote" class="col-12 col-md-6 col-lg-4">
                 <p class="text-center">Welcome to Hogwarts School of Witchcraft and Wizardry</p>
@@ -35,102 +35,13 @@
                 <img class="centerimg sortinghat" src="https://i.imgur.com/GGxfc5q.png">
             </div>
         </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-12 col-md-8 text-center">
-
-        <input id="example1" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="3"
-              data-slider-tooltip="hide" /><br>
-              <input id="example2" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example3" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example4" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example5" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example6" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example7" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example8" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example9" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-              <input id="example10" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1,2,3,4,5]"
-              data-slider-ticks-labels='["1", "2", "3", "4", "5"]'
-              data-slider-min="1"
-              data-slider-max="5"
-              data-slider-step="1"
-              data-slider-value="1"
-              data-slider-tooltip="hide" /><br>
-            <button id="submit">submit</button><br>
+        <div id="questions">
         </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-2 col-lg-2">
+        <button id="submit">Sort Me</button>
     </div>
+</div>
     <div class="row justify-content-center">
         <div class="col-12 col-md-8" id="testbox">
         </div>
@@ -141,81 +52,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.min.js"></script>
-
-    <script>
-        function random() {
-            return Math.floor(Math.random() * 5) + 1;
-        };
-
-        let i = 1;
-
-        $("#submit").on("click", function(){
-            let test1 = {
-                name: "test2",
-                scores: [
-                parseInt($("#example1").val()),
-                parseInt($("#example2").val()),
-                parseInt($("#example3").val()),
-                parseInt($("#example4").val()),
-                parseInt($("#example5").val()),
-                parseInt($("#example6").val()),
-                parseInt($("#example7").val()),
-                parseInt($("#example8").val()),
-                parseInt($("#example9").val()),
-                parseInt($("#example10").val())
-                ]
-            }
-
-        $.post("/api/students", test1, function (response){
-            console.log(response);
-            $("#testbox").append(`
-                <h2 class="text-center">You belong in...</h2>
-                <h1 class="text-center">${response.name}</h1>
-                `);
-        })
-        $.post("/api/match", test1, function (response){
-            console.log(response);
-            $("#testbox").append(`
-                <h2 class="text-center">Your roomate is: ${response.name}</h2>
-                `);
-        })
-
-        });
-        $("#test").on("click",function(){
-            let test2 = {
-                name: "Test" + i,
-                scores: [
-                random(),
-                random(),
-                random(),
-                random(),
-                random(),
-                random(),
-                random(),
-                random(),
-                random(),
-                random()]
-            }
-        i++;
-        $.post("/api/students", test2, function (response) {
-            console.log(response);
-            $("#testbox").append(`
-                <h2 class="text-center">You belong in...</h2>
-                <h1 class="text-center">${response.name}</h1>
-                `);
-        })
-
-
-        $.post("api/match", test2, function(response){
-            console.log(response);
-            $("#testbox").append(`
-                <h2 class="text-center">Your Roomate is...</h2>
-                <h1 class="text-center">${response.name}</h1>
-                `);
-        })
-        });
-
-    </script>
+    <script src="assets/js/magic.js" type="text/javascript"></script>
 </body>
 
 </html>
