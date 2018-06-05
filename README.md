@@ -17,7 +17,7 @@ Make sure you have node.js installed on your computer! You can download it via t
 https://nodejs.org/en/download/
 ```
 
-Then either clone or download this repo. Alternatively you can view the deployed version on heroku [here](https://still-scrubland-73712.herokuapp.com/)
+Then either clone or download this repo.
 
 ### Installation :file_folder:
 Inside your terminal or command prompt, navigate to the location of the cloned repo. Install the necessary dependencies by running - 
@@ -27,7 +27,9 @@ npm i
 
 ## Getting Sorted :cyclone:
 
-Type `node server.js` into your terminal to intialize the app. This will set up a local server on your computer. Navigate to the server in your browser by visiting `http://localhost:8888/`
+The deployed version of this app is hosted on heroku [here](https://still-scrubland-73712.herokuapp.com/)
+
+To view this app locally on your machine type `node server.js` into your terminal to intialize the app. This will set up a local server on your computer. Navigate to the server in your browser by visiting `http://localhost:8888/`
 
 To end the sever connection simply hold down `ctrl + c` inside of your terminal.
 
@@ -49,5 +51,7 @@ To end the sever connection simply hold down `ctrl + c` inside of your terminal.
 
 ## Acknowledgments :pray:
 A bigly thank you to our instructor, Jerome, and the TAs, Amber, Ricky, and Sasha!!  :grimacing:
+
 A huuuuge thanks to my classmates, espeically Robert, Eric, and Nick for helping me when I was confused.
+
 and of course to J.K. Rowling for the gift of Harry Potter and the Wizarding World she created.
