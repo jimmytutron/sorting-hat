@@ -31,12 +31,6 @@ Type `node server.js` into your terminal to intialize the app. This will set up 
 
 To end the sever connection simply hold down `ctrl + c` inside of your terminal.
 
-### Guest Level Access :telephone:
-![demo1](gifs/demo1.gif)
-
-To enter Guest Access select `guest` from the main commands menu. Type in any desired password to view a table of all available narratives and to purchase slots.
-
-
 ## Built With :crescent_moon:
 * HTML5 & CSS3
 * [Bootstrap](https://getbootstrap.com/) - CSS framework

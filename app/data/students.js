@@ -1,4 +1,4 @@
-var students = [
+let students = [
 	{
 		name: "Harry Potter",
 		house: "Hogwarts",

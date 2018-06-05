@@ -1,7 +1,7 @@
 $("#resubmit").hide();
 $("#after").hide();
 
-var questions = [
+let questions = [
 "1. I see myself as critical, quarrelsome",
 "2. I do only the minimum amount of work needed to get by",
 "3. I have used deceit or lied to get my way",
@@ -14,7 +14,7 @@ var questions = [
 "10. I don't want people to treat me as though I'm superior to them"
 ]
 
-for (var i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++){
     $("#questions").append(`<div class="row justify-content-center mt-3">
                             <div class="col-12 col-md-8 text-center">
                                 <p class="question">${questions[i]}</p>
@@ -32,7 +32,7 @@ for (var i = 0; i < 10; i++){
                         `)
 }
 
-$("#submit").one("click", function() {
+$("#submit").one("click", () => {
     let userScores = {
         name: "user",
         scores: [
@@ -49,7 +49,7 @@ $("#submit").one("click", function() {
         ]
     }
 
-    $.post("/api/students", userScores, function(response) {
+    $.post("/api/students", userScores, response => {
         console.log(response);
         $("#house-modal").html(`
                 <div class="row justify-content-center">
@@ -63,7 +63,7 @@ $("#submit").one("click", function() {
         </div>
         `);
     })
-    $.post("/api/match", userScores, function(response) {
+    $.post("/api/match", userScores, response => {
         console.log(response);
         //WORK-IN-PROGRESS will add more students and match a roomate -------
         // $("#house-modal").append(`
@@ -85,7 +85,7 @@ $("#submit").one("click", function() {
 
 });
 
-$("#resubmit").on("click", function(){
+$("#resubmit").on("click",() => {
     console.log("hello");
     window.scrollTo(0, 0);
     location.reload();

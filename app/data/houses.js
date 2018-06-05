@@ -1,4 +1,4 @@
-var houses = [
+let houses = [
 	{
 		name: "Gryffindor",
 		crest: "https://vignette.wikia.nocookie.net/harrypotter/images/8/8e/0.31_Gryffindor_Crest_Transparent.png/revision/latest/scale-to-width-down/700?cb=20161124074004",
