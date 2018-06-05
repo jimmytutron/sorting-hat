@@ -43,7 +43,7 @@ To end the sever connection simply hold down `ctrl + c` inside of your terminal.
 
 ### NPM Packages
 * [Express](https://www.npmjs.com/package/express)
-* [inquirer](https://www.npmjs.com/package/body-parser)
+* [body-parser](https://www.npmjs.com/package/body-parser)
 
 ## Author :key:
 * **Jimmy Tu** - [jimmytutron](https://github.com/jimmytutron)
