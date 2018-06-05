@@ -1,8 +1,25 @@
 body {
 	background-color: #a79f8e;
 	color: #fff;
+	overflow-x: hidden;
 }
 
+#header {
+	background-color: #645748;
+	z-index: -3;
+}
+
+#quote {
+	position: relative;
+	padding-top: 290px;
+}
+
+.container {
+	z-index: -2;
+	margin-top: -300px;
+	background-color: #79746f;
+	border-radius: 5px;
+}
 .slider-selection.tick-slider-selection {
     background-image: -webkit-linear-gradient(top,#a59f8d 0,#c5b397 100%);
     background-image: -o-linear-gradient(top,#a59f8d 0,#c5b397 100%);
@@ -18,4 +35,14 @@ body {
 .slider-tick.in-selection {
     background-image: none;
     background-color: #b9b0a5;
+}
+
+.centerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sortinghat{
+	max-height: 200px;
 }
