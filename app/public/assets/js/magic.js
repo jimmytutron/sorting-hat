@@ -51,6 +51,7 @@ $("#submit").one("click", () => {
 
     $.post("/api/students", userScores, response => {
         console.log(response);
+        //WILL UPDATE WITH REAL DESCRIPTIONS --------
         $("#house-modal").html(`
                 <div class="row justify-content-center">
             <div class="col-12 col-md-6">
@@ -62,7 +63,7 @@ $("#submit").one("click", () => {
             </div>
         </div>
         `);
-    })
+    });
     $.post("/api/match", userScores, response => {
         console.log(response);
         //WORK-IN-PROGRESS will add more students and match a roomate -------
