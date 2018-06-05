@@ -1,0 +1,21 @@
+body {
+	background-color: #a79f8e;
+	color: #fff;
+}
+
+.slider-selection.tick-slider-selection {
+    background-image: -webkit-linear-gradient(top,#a59f8d 0,#c5b397 100%);
+    background-image: -o-linear-gradient(top,#a59f8d 0,#c5b397 100%);
+    background-image: linear-gradient(to bottom,#a59f8d 0,#c5b397 100%);
+    background-repeat: repeat-x;
+    }
+
+.slider-handle {
+    background-color: #987b53;
+    background-image: none;
+}
+
+.slider-tick.in-selection {
+    background-image: none;
+    background-color: #b9b0a5;
+}
