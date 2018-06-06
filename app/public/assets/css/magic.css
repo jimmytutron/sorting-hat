@@ -20,6 +20,7 @@ body {
 	padding-top: 250px;
 }
 
+
 #submit, #resubmit {
 	display: block;
 	margin-left: auto;
@@ -60,7 +61,7 @@ a:hover{
 	font-size: 1.2em;
 }
 .question {
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 
 .house-info {
@@ -90,6 +91,14 @@ a:hover{
 }
 
 
+.slider.slider-horizontal {
+    width: 65%;
+    height: 20px;
+}
+
+.slider-tick-label-container .slider-tick-label {
+    font-size: 25px;
+}
 
 .slider-selection.tick-slider-selection {
     background-image: -webkit-linear-gradient(top,#a59f8d 0,#c5b397 100%);
@@ -99,7 +108,7 @@ a:hover{
     }
 
 .slider-handle {
-    background-color: #987b53;
+    background-color: #c59775;
     background-image: none;
 }
 
