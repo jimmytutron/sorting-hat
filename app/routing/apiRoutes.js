@@ -28,6 +28,7 @@ module.exports = (app) => {
 		let totalDifference = 0;
 
 		res.json(sortingHat(newStudent, hogwartsStudents));
+		hogwartsStudents.push(newStudent);
 	})
 }
 

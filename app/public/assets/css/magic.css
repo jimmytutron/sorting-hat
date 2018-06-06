@@ -1,5 +1,6 @@
 body {
 	background-color: #a79f8e;
+/*	background-image: url("../imgs/vintage-concrete.png")*/;
 	color: #fff;
 	overflow-x: hidden;
 	font-family: 'Crimson Text', serif;
@@ -7,6 +8,10 @@ body {
 
 #header {
 	background-color: #645748;
+	background-image: url("../imgs/hogwarts.png");
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
 	z-index: -3;
 }
 
@@ -54,6 +59,34 @@ a:hover{
 	font-size: 1.4em;
 }
 
+.house-info {
+	font-size: 1.4em;
+}
+
+.gryf-txt, .raven-txt, .huff-txt, .slyt-txt {
+	font-size: 3em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.gryf-txt{
+	color: #a12220;
+}
+
+.raven-txt{
+	color: #192f53;
+}
+
+.huff-txt{
+ 	color: #463b08;
+}
+
+.slyt-txt{
+	color: #094608;
+}
+
+
+
 .slider-selection.tick-slider-selection {
     background-image: -webkit-linear-gradient(top,#a59f8d 0,#c5b397 100%);
     background-image: -o-linear-gradient(top,#a59f8d 0,#c5b397 100%);
@@ -83,4 +116,38 @@ a:hover{
 
 .txtcolor {
 	color: #000;
+}
+
+.modal-content {
+	background-color: transparent;
+	background-image: url("../imgs/scroll.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+
+}
+
+#house-modal{
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+
+}
+
+.modal-header {
+	border: none;
+	padding: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+
+.welcome {
+	font-size: 3em;
+}
+.splash {
+	font-size: 2em;
+}
 }

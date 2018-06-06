@@ -58,8 +58,8 @@ $("#submit").one("click", () => {
                 <img class="centerimg img-fluid" src="${response.crest}">
             </div>
             <div class="col-12 col-md-6">
-                <h1 class="text-center txtcolor">${response.name}</h1>
-                <p class="txtcolor">Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus, suck his soul Muggle-Born large order of drills the trace. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.</p>
+                <h1 class="text-center ${response.class}">${response.name}</h1>
+                <p class="txtcolor house-info">${response.info}</p>
             </div>
         </div>
         `);
@@ -69,10 +69,10 @@ $("#submit").one("click", () => {
         //WORK-IN-PROGRESS will add more students and match a roomate -------
         // $("#house-modal").append(`
         //  <div class="row justify-content-center">
-        //              <div class="col-12 col-md-6">
+        //              <div class="col-12 col-md-12 col-lg-6">
         //         <h1 class="text-center txtcolor">It seems you're rooming with ${response.name}</h1>
         //     </div>
-        //     <div class="col-12 col-md-6">
+        //     <div class="col-12 col-md-12 col-lg-6">
         //         <img class="centerimg img-fluid" src="https://media.giphy.com/media/lCqSKje3aPUuQ/giphy.gif">
         //     </div>
 
